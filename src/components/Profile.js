@@ -41,7 +41,7 @@ class Profile extends Component {
                         {/* HARD WAY : Convert from buffer format to base64 */}
                         {/* <img src={this.state.picture}  alt="Please choose your avatar" key={new Date()} /> */}
                         {/* EASY WAY */}
-                        <img src={`https://reinhartreact-todolist.herokuapp.com/users/${this.props.data_id}/avatar`}  alt="Please choose your avatar" key={ new Date() }  />
+                        <img src={`https://reinhartmongoose-todolist.herokuapp.com//users/${this.props.data_id}/avatar`}  alt="Please choose your avatar" key={ new Date() }  />
                         <h1 className="display-3">Hello, {this.props.data_name} !</h1>
                         <p className="lead"></p>
                     </Jumbotron>
