@@ -11,6 +11,12 @@ export default (data = init, action) => {
                 id: action.payload.id,
                 name: action.payload.name
             }
+
+        case 'LOGOUT':
+            return {
+                id: '',
+                name: ''
+            }
                 
         default:
             return data

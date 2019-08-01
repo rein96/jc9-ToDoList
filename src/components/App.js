@@ -10,6 +10,7 @@ import Header from './Header'
 import Register from './Register'
 import Login from './Login'
 import Profile from './Profile'
+import EditProfile from './EditProfile'
 
 const cookie = new cookies()
 
@@ -32,6 +33,7 @@ class App extends Component {
                 <Route path='/register' component={Register}/>
                 <Route path='/login' component={Login}/>
                 <Route path='/profile' component={Profile} />
+                <Route path='/editprofile' component={EditProfile} />
             </BrowserRouter>
         )
     }

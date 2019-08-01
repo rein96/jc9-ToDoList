@@ -54,3 +54,11 @@ export const keepLogin = (user) => {
         }
     }
 }
+
+export const onLogout = () => {
+    cookie.remove('dataUser')
+
+    return{
+        type: 'LOGOUT',
+    }
+}
